@@ -8,4 +8,4 @@ uCertify is an online learning platform covering several topics. In my case, it 
 While I do not necessarily have to do all lessons to complete the university course requirements, I decided that the best outcome of that course is to do a lesson a day for all lessons (42 lessons). 
 
 ## Structure of repository
-All lessons are self-contained and will be placed in their own folders located in `./lesson_{N}`. All other files will be located in the root directory (e.g., README.md).
+All lessons are self-contained and will be placed in their own folders located in `./lab_{N}{a/b/c/...}`. All other files will be located in the root directory (e.g., README.md).
