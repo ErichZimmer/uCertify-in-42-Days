@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--Author: Erich Zimmer
+    File: loops.html
+    Created: 2024/09/03
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Loops in JavaScript</title>
+    </head>
+
+    <body>
+        <b>Output of the for loop</b>
+        <p id="demo1"></p>
+
+        <b>Output of the for ... in loop</b>
+        <p id="demo2"></p>
+
+        <b>Output of the for ... of loop</b>
+        <p id="demo3"></p>
+
+        <b>Output of the while loop</b>
+        <p id="demo4"></p>
+
+        <b>Output of the do ... while loop</b>
+        <p id="demo5"></p>
+
+        <script type="text/javascript">
+            const cars = ["BMW", "Volvo", "Ford"];
+            let i, len, text;
+
+            for (i = 0, len = cars.length, text = ""; i < len; i++) {
+                text += cars[i] + "<br/>";
+            }
+            document.getElementById("demo1").innerHTML = text;
+
+            text = "";
+            for (let x in cars) {
+                text += cars[x] + "<br/>";
+            }
+            document.getElementById("demo2").innerHTML = text;
+
+            text = "";
+                for (let x of cars) {
+                text += x + "<br/>";
+            }
+            document.getElementById("demo3").innerHTML = text;
+
+            i = 0;
+            text = "";
+            while (cars[i]) {
+                text += cars[i] + "<br/>";
+                i++;
+            }
+            document.getElementById("demo4").innerHTML = text;
+            
+            i = 0;
+            text = "";
+            do {
+                text += cars[i] + "<br/>";
+                i++;
+            } while (cars[i]);
+            document.getElementById("demo5").innerHTML = text;
+        </script>
+    </body>
+</html>

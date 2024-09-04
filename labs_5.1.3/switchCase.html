@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <title>Switch Statements w/ Date </title>
+    </head>
+
+    <body>
+        <div id="message"></div>
+
+        <script type="text/javascript">
+            let day;
+            let currentDay = new Date().getDay();
+
+            switch (currentDay) {
+                case 0:
+                    day = "Today is Sunday.";
+                    break;
+                case 1:
+                    day = "Today is Monday.";
+                    break;
+                case 2:
+                    day = "Today is Tuesday.";
+                    break;
+                case 3:
+                    day = "Today is Wednesday.";
+                    break;
+                case 4:
+                    day = "Today is Thursday.";
+                    break;
+                case 5:
+                    day = "Today is Friday.";
+                    break;
+                case 6:
+                    day = "Today is Saturday.";
+            }
+            
+            const msg = document.getElementById('message');
+            msg.innerHTML = day;
+        </script>
+    </body>
+</html>
