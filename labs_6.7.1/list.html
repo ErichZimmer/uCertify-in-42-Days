@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--Author: Erich Zimmer
+    File: list.html
+    Created: 2024/09/03
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ingredients List</title>
+    </head>
+
+    <body>
+        <ul id="ingredients"></ul>
+
+        <script type="text/javascript">
+            const ingredients = ['eggs','milk','cheese',
+                                 'garlic','onion','salt',
+                                 'pepper'];
+        let listItems = ingredients
+            .map((singleIngredient) => `<li>${singleIngredient}</li>`)
+            .join('');
+            
+        document.getElementById('ingredients').innerHTML = listItems;
+        </script>
+    </body>
+</html>
